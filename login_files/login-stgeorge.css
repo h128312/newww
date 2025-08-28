@@ -1,0 +1,622 @@
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 900;
+  src: url("./NunitoSans-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url("./NunitoSans-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./NunitoSans-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./NunitoSans-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./NunitoSans-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./NunitoSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./NunitoSans-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./NunitoSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src: url("./NunitoSans-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("./NunitoSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./NunitoSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./NunitoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src: url("./NunitoSans-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("./NunitoSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200;
+  src: url("./NunitoSans-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url("./NunitoSans-ExtraLight.ttf") format("truetype");
+}
+html {
+  font-size: 14px;
+  font-family: "Nunito Sans", Arial, Verdana, Tahoma;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+.cb-security {
+  height: 100vh;
+  display: flex;
+  /* The Modal (background) */
+}
+.cb-security .cb-security__left-panel {
+  background-image: url(./st_georges_bank_left.png);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cb-security .cb-security__rigth-panel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-danger {
+  border-radius: 8px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  color: #3F3F3F;
+  padding: 12px 48px 12px 20px;
+  border: 8px;
+  max-width: 330px;
+  background-color: #F5F5F5;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-danger .cb-security__login-danger-icon img{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-danger .cb-security__login-danger-title {
+  color: #1E1E1E;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-danger:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  width: 2px;
+  height: calc(100% - 24px);
+  background-color: #C30000;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-logo {
+  max-height: 60px;
+  margin-left: 0;
+  align-self: flex-start;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-heading {
+  color: #00693C;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-title {
+  color: #3F3F3F;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-label {
+  color: #3F3F3F;
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb_security__input-container {
+  position: relative;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb_security__input-container .cb-security__input-icon {
+  position: absolute;
+  left: 200px;
+  width: 24px;
+  height: 24px;
+  top: 52%;
+  transform: translateY(-50%);
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb_security__input-container #togglePassword {
+  cursor: pointer;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input {
+  height: 48px;
+  padding: 12px 45px 12px 16px;
+  max-width: 240px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #C4C4C4;
+  background-color: #fff !important;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #3F3F3F;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input [type=password]::after {
+  content: "*";
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input:hover {
+  border-color: #949494;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input:focus {
+  outline: 0;
+  border-color: #0F804F !important;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input:disabled {
+  border-color: #C4C4C4;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input:active {
+  border-color: #717171;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input.cb-security__login-input-password {
+  padding-right: 45px;
+  width: 100%;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input:-webkit-autofill, .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input::-ms-input-placeholder {
+  background-color: #fff !important;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-inputs-hint {
+  color: #949494;
+  padding: 5px 0 0 16px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn {
+  margin: 32px 0;
+  font-style: normal;
+  line-height: 21px;
+  padding: 12px 16px;
+  max-width: 240px;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  position: relative;
+  color: #fff;
+  background-color: #00693C;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:hover {
+  background-color: #338763;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:active {
+  background-color: #003F24;
+  outline: 0 !important;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:focus {
+  color: #fff;
+  background: #00693C;
+  box-shadow: none;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:focus:not(.clicked) {
+  border-color: #C3E5A9;
+  outline: 3px solid #C3E5A9;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:focus.clicked {
+  outline: none;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:disabled {
+  background-color: #F5F5F5;
+  color: #C4C4C4;
+  cursor: no-drop;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary {
+  color: #046a38;
+  background-color: #fff;
+  border: 1px solid #00693C;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary:hover {
+  background-color: #E7F7EE;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary:active {
+  background-color: #CCE1D8;
+  border: 1px solid #00693C;
+  outline: 0 !important;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary:focus {
+  color: #00693C;
+  background: #fff;
+  box-shadow: none;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary:focus:not(.clicked) {
+  border-color: #C3E5A9;
+  outline: 3px solid #C3E5A9;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary:focus.clicked {
+  outline: none;
+  background-color: #CCE1D8;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.tertiary {
+  color: #00693C;
+  background-color: #fff;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.tertiary:hover {
+  background-color: #E7F7EE;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.tertiary:active {
+  background-color: #CCE1D8;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-utilities {
+  margin-top: 15px;
+  align-items: center;
+  font-style: normal;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #00693C;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-utilities:hover {
+  color: #717171;
+  text-decoration-line: none;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-utilities:active {
+  color: #003F24;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-utilities:focus {
+  color: #00693C;
+  outline: 4px solid #C3E5A9;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-utilities:disabled {
+  color: #C4C4C4;
+  cursor: no-drop;
+}
+.cb-security .cb-security__rigth-panel .cb-security__login-container-form .links-container {
+  display: flex;
+  gap: 20px;
+  text-align: start;
+  margin: 0 -15px 0 0;
+  flex-wrap: wrap;
+}
+.cb-security .cb-security__modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content/Box */
+}
+.cb-security .cb-security__modal .cb-security__modal-content {
+  background-color: #fefefe;
+  padding: 20.09px;
+  border: 1px solid #888;
+  width: 400px;
+  height: fit-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-header {
+  color: #3F3F3F;
+  padding: 0 0 20px 0;
+  align-items: stretch;
+  /* The Close Button */
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-header .cb-security__modal-title {
+  line-height: 30px;
+  text-align: left;
+  align-self: center;
+  margin-right: 11px;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-header .cb-security__modal-close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-header .cb-security__modal-close:hover, .cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-header .cb-security__modal-close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  justify-content: space-between;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body .cb-security__login-inputs {
+  margin-top: 0px;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body .cb-security__login-input.cb-security__modal-input {
+  height: 45px;
+  max-width: 100%;
+  font-size: 1.4rem;
+  letter-spacing: 30px;
+  text-align: center;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body .cb-security__login-input.cb-security__modal-input::-webkit-input-placeholder {
+  top: -2px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body .cb-security__login-input.cb-security__modal-input-soft {
+  height: 70px;
+  max-width: 100%;
+  font-size: 40px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body .cb-security__modal-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 20px;
+}
+.cb-security .cb-security__modal .cb-security__modal-content .cb-security__modal-body .cb-security__modal-buttons button {
+  margin: 16px 0 0 0;
+}
+.cb-security .login-password {
+  display: flex;
+  align-items: center;
+}
+.cb-security .login-password i#togglePassword {
+  margin-left: -30px;
+  cursor: pointer;
+  margin-top: 5px;
+  color: gray;
+}
+
+@media (max-width: 990px) {
+  .cb-security .cb-security__left-panel {
+    width: 0;
+  }
+  .cb-security .cb-security__rigth-panel {
+    width: 100%;
+    margin: 0 30px;
+  }
+  .cb-security__modal-content {
+    left: 50%;
+  }
+}
+@media (max-width: 577px) {
+  .cb-security .cb-security__rigth-panel {
+    margin: 0 40px;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-heading {
+    text-align: center;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs {
+    width: 100%;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-inputs .cb-security__login-input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-utilities {
+    text-align: center;
+  }
+}
+.cb-security__modal-input::placeholder {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  bottom: 7px;
+}
+
+.cb-security__modal-input::-webkit-input-placeholder {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  bottom: 7px;
+}
+
+.cb-security__modal-input:-ms-input-placeholder {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  bottom: 7px;
+}
+
+.cb-security__modal-input-soft::placeholder {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  bottom: 7px;
+}
+
+.cb-security__modal-input-soft::-webkit-input-placeholder {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  bottom: 7px;
+}
+
+.cb-security__modal-input-soft:-ms-input-placeholder {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  bottom: 7px;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+/* For Microsoft Edge and Internet Explorer */
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+  display: none;
+}
+
+/* For Chrome */
+input[type=password]::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+body.using-keyboard .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn:focus:not(.clicked) {
+  border-color: #C3E5A9;
+  outline: 3px solid #C3E5A9;
+}
+
+body.using-keyboard .cb-security .cb-security__rigth-panel .cb-security__login-container-form .cb-security__login-form .cb-security__login-btn.secondary:focus:not(.clicked) {
+  border-color: #C3E5A9;
+  outline: 3px solid #C3E5A9;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=login-stgeorge.css.map */
